@@ -137,7 +137,7 @@ The perfomance of the Random Forest
 # Conclusion
 
 1.  The maximum accuracy obtained for the **logistic Model is 73.12%** and **Naïve for Random Forest is 76.78%**. 
-2. In advertising, Pharma industry are get profitable and if we focus on female gandre then this campaign are get more profit, the best time to advertising products is Prime time and the video time of the advertisement should be less.
+2. In advertising, Pharma industry are get profitable and if we focus on female gender then this campaign are get more profit, the best time to advertising products is Prime time and the video time of the advertisement should be less.
 
 
 
