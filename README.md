@@ -29,9 +29,8 @@ According to the above information our project is based on a **Promotion Strateg
 	2.4. Data Visualization 
 	2.5. Missing Value
 	2.6. Transfer the Categorical Data into Numerical Data 
-	2.7. Model Performance Measure 
-	2.8. Models
-	2.9. Result
+	2.7. Models
+	2.8. Result
   
  # Data Preprocesing
  
@@ -71,5 +70,75 @@ Variable definitions are shows in following:
 **Money_back_guarantee** -Whether or not the product offers a refund in the case of customer dissatisfaction.
 
 **Netgain [target]** -Whether the ad will incur a gain or loss when sold
+
+# Bias Data and Solution of Bias Data
+
+The common definition of bias data is that the available data is not presented in a proper way; it means that the data is not representative of the whole population. In my situation the data is appropriate.
+The solution of this problem is using the re-sampling method in python. Re-sampling method are two type:
+1. Over sampling						2. Under sampling
+
+Now we handle a bias data by **Random Under Sampling** procedure
+
+# Data Visualization 
+
+I have discussed the importance of data for ML algorithms along with some Python notebook to understand the data with statistics. There is another way called visualization, to understand the data. With the help of data visualization, we can see how the data looks like and what kind of correlation is held by the attributes of data. It is the fastest way to see if the features correspond to the output. With the help of following Python recipes, we can understand ML data with statistics.
+
+Some Imp points due to visualize data
+
+1.The ratings of each advertisment is 0.01 to 0.03.
+2. On an average run time of the advertising is an approx 40mpw (minutes per week).
+3.  According to the above data **72.4%female** and **27.6%** male are seen in advertisements. It means the maximum number of females are interested to see advertisements.
+4.  According to the above data, **low products** are getting more advertisement **(i.e.60.2%)** and **medium products** are getting less advertisement **(i.e. 11.5%)**.
+5.  According to above data, **Primetime** is the best time for advertisement **(i.e. 68.0% advertisement is seen in primetime)**.
+6.  In **Infomercial** related advertisement companies will be profitable in netgain. But **drama** genre related advertisement company will be lost in netgain.
+
+# Missing Value
+
+It is common in data analytics tasks to encounter missing values in datasets, where by missing we mean that some particular values does or should exist, and failed to be observed or recorded. In machine learning tasks, it is common to handle missing data by removing observations with missing values, or replacing missing data with the mean value for its feature. To show why this is problematic, we use listwise deletion and mean imputation to recover missing values from artificially created datasets, and we compare those models against ones with full information.Now we check missing value in our data and there is no mising value.
+
+# Transfer the Categorical Data into Numerical Data 
+
+By the LabelEncoder,Transform the categorical data into numerical data
+
+# Models
+
+We used two models and then we selected a model having the highest accuracy score after parameter tuning to do the prediction on test data.
+1. Logistic Regression
+2. Random Forest Algorithm
+
+# Results
+
+The perfomance of the Logistic Regression
+
+**C+Solver**			**Accuracy Score**
+
+**10+liblinear**		0.7274683884853377
+
+**10+newton-cg**		0.7288135593220338
+
+**10+saga**			0.6785041700295937
+
+**100+liblinear**		0.7309658326607479
+
+**100+newton-cg**		0.7312348668280871
+
+**100+saga**			0.6785041700295937
+
+The perfomance of the Random Forest
+
+**Number of estimators(n_estimators)**		**Accuracy score**
+
+**10**						0.7589453860640302
+
+**50**						0.7635189669087974
+
+**100**						0.7678235135862255
+
+# Conclusion
+
+1.  The maximum accuracy obtained for the **logistic Model is 73.12%** and **Naïve for Random Forest is 76.78%**. 
+2. In advertising, Pharma industry are get profitable and if we focus on female gandre then this campaign are get more profit, the best time to advertising products is Prime time and the video time of the advertisement should be less.
+
+
 
 
